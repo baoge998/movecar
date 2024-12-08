@@ -73,7 +73,7 @@
     }
 
     function sendSMS(phoneNumber) {
-      const messageBody = encodeURIComponent(`您好，您的车牌号是 ${plateNumber}，请及时挪车。`);
+      const messageBody = encodeURIComponent(`您好，您的车牌号是 ${plateNumber}，请及时挪车!`);
       window.location.href = `sms:${phoneNumber}?body=${messageBody}`; // This will open the SMS app with the number and message
     }
   </script>
